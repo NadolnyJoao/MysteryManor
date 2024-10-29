@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - "Cen\xE1rio"
+  - Interative_Area
   layers:
   - Default
   - TransparentFX
@@ -48,9 +49,9 @@ TagManager:
   - name: Parede
     uniqueID: 2557750125
     locked: 0
-  - name: Player
-    uniqueID: 1448806063
-    locked: 0
   - name: "Cen\xE1rio"
     uniqueID: 1892882457
+    locked: 0
+  - name: Player
+    uniqueID: 1448806063
     locked: 0
