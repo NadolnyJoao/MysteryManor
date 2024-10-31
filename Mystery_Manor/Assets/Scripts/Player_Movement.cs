@@ -13,7 +13,7 @@ private Vector3 target;
 }
 	void Update()
 	{
-	 if (Input.GetMouseButtonDown(1))
+	 if (Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(0))
         {
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             target.z = transform.position.z;

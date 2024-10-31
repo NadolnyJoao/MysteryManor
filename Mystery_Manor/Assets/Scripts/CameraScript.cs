@@ -5,11 +5,12 @@ using UnityEngine;
 public class CameraScript : MonoBehaviour
 {
     public GameObject camera;
-    public GameObject Target;
+   
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (camera == null)
+            camera = Camera.main.gameObject;
     }
 
     // Update is called once per frame
@@ -19,7 +20,10 @@ public class CameraScript : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        camera.trasnform.position = Target.trasnform.position;
+        Vector3 npos = transform.position;
+        npos.z = -10.0f;
+        camera.transform.position = npos; 
+        
 
     }
 }
