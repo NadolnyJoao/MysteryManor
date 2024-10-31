@@ -4,45 +4,57 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 
-
 public class InteractionSystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-   public UnityEvent onInteract;
-   public bool InArea = false;
-   public TMP_Text InteractText;
-   
-    
+    public UnityEvent onInteract;
+    public bool InArea = false;
+    public TMP_Text InteractText;
+
     void Start()
     {
-        
+        // Ensure the interaction text is hidden at the start
+        if (InteractText != null)
+        {
+            InteractText.gameObject.SetActive(false);
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-      if (InArea == true && Input.GetKeyDown(KeyCode.Space)){
-        InteractText = "Aperte Espaço para interagir";
-        
-        onInteract.Invoke();
-
-      }
-    }
-   public void OnInteraction(){
-        onInteract.Invoke();
-
-    }
-    void OnTriggerEnter2D (Collider2D collision) {
-    if(collision.gameObject.CompareTag("Player")){
-        Debug.Log("Primeira parte funciona");
-       
-            InArea = true;
+        if (InArea && Input.GetKeyDown(KeyCode.Space))
+        {
+            onInteract.Invoke();
         }
-        
-        
-        
-       
-       
-    }
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Player entered interaction area");
+            InArea = true;
+
+            // Show interaction text
+            if (InteractText != null)
+            {
+                InteractText.gameObject.SetActive(true);
+                InteractText.text = "Press Space to interact";
+            }
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Player exited interaction area");
+            InArea = false;
+
+            // Hide interaction text
+            if (InteractText != null)
+            {
+                InteractText.gameObject.SetActive(false);
+            }
+        }
+    }
+}
