@@ -49,6 +49,9 @@ TagManager:
   - name: Parede
     uniqueID: 2557750125
     locked: 0
+  - name: Scenario
+    uniqueID: 3377088533
+    locked: 0
   - name: "Cen\xE1rio"
     uniqueID: 1892882457
     locked: 0
