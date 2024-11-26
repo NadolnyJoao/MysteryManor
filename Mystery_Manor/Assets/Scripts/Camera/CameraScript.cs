@@ -19,9 +19,10 @@ public class CameraScript : MonoBehaviour
     {
         MoveCamera();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D Target)
     {
-         targetPosition = collision.gameObject.transform.position;
+        if (Target.tag == "Cenário")
+        targetPosition = Target.gameObject.transform.position;
         Debug.Log("name of sala "+ gameObject.name);
         targetPosition.z = -10.0f;
         
