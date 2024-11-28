@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    public GameObject camera;
+    public GameObject MyCamera;
     public float speedMove = 2;
     public  Vector3 targetPosition ;
     // Start is called before the first frame update
     void Start()
     {
-        if (camera == null)
-            camera = Camera.main.gameObject;
+        if (MyCamera == null)
+            MyCamera = Camera.main.gameObject;
     }
 
     // Update is called once per frame
@@ -31,13 +31,13 @@ public class CameraScript : MonoBehaviour
     private void MoveCamera()
     {
         // Enquanto a posição da câmera não estiver próxima da posição desejada, continue a mover suavemente
-        if (Vector3.Distance(camera.transform.position, targetPosition) > 0.1f)
+        if (Vector3.Distance(MyCamera.transform.position, targetPosition) > 0.1f)
         {
          
-            camera.transform.position = Vector3.Lerp(camera.transform.position, targetPosition, speedMove * Time.deltaTime);
+            MyCamera.transform.position = Vector3.Lerp(MyCamera.transform.position, targetPosition, speedMove * Time.deltaTime);
         }
 
         // // Garante que a câmera termine exatamente na posição alvo
-        // camera.transform.position = targetPosition;
+        // MyCamera.transform.position = targetPosition;
     }
 }
