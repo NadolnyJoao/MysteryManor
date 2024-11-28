@@ -8,6 +8,8 @@ public class SegundoAndar : MonoBehaviour
     // Start is called before the first frame update
     public GameObject estauta180;
     public GameObject luzApagada;
+    public GameObject primeiroandar;
+    public GameObject segundoandar;
     void Start()
     {
         
@@ -20,7 +22,8 @@ public class SegundoAndar : MonoBehaviour
     }
     public void IrSegundoAndar(){
         if(estauta180.activeInHierarchy && luzApagada.activeInHierarchy == false){
-        SceneManager.LoadScene(2);
+       primeiroandar.SetActive(false);
+       segundoandar.SetActive(true);
 
         }
 
