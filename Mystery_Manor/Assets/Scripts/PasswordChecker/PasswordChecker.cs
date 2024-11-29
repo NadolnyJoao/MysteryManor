@@ -4,12 +4,13 @@ using UnityEngine.UI;
 public class PasswordChecker : MonoBehaviour
 {
     // Variável para armazenar a senha correta
-    [SerializeField] private string correctPassword = "1234";
+    [SerializeField] private string correctPassword = "1432";
 
     // Variável para armazenar a entrada do usuário
     private string userInput = "";
     public GameObject painel;
     public bool hasCard = false;
+    public GameObject ganhou;
 
     // Referência ao texto na UI para exibir a entrada do usuário (opcional)
     [SerializeField] private Text displayText;
@@ -46,6 +47,7 @@ public class PasswordChecker : MonoBehaviour
             if (userInput == correctPassword)
             {
                 Debug.Log("Senha correta!");
+                ganhou.SetActive(true);
                 // Adicione aqui ações para quando a senha estiver correta
             }
             else
