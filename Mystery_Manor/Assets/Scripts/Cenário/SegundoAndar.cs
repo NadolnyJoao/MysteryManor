@@ -24,7 +24,7 @@ public class SegundoAndar : MonoBehaviour
         if(estauta180.activeInHierarchy && luzApagada.activeInHierarchy == false){
        primeiroandar.SetActive(false);
        segundoandar.SetActive(true);
-
+            Debug.Log("Segunda faze");
         }
 
     }
