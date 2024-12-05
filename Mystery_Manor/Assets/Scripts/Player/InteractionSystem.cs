@@ -31,7 +31,7 @@ public class InteractionSystem : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player entered interaction area");
+            //Debug.Log("Player entered interaction area");
             InArea = true;
 
             // Show interaction text
@@ -47,7 +47,7 @@ public class InteractionSystem : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player exited interaction area");
+            //Debug.Log("Player exited interaction area");
             InArea = false;
 
             // Hide interaction text

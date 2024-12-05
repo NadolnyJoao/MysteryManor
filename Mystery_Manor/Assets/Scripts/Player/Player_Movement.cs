@@ -1,15 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD;
+using FMOD.Studio;
+using FMODUnityResonance;
 
 public class Player_Movement : MonoBehaviour
 {
  public float speed = 5f;
  public GameObject pointerMarkerPrefab;
 private Vector3 target;
+public float ActualSpeed = 0;
+[SerializeField] private EventReference Footstap;
+    private FMOD.Studio.EventInstance FootstapsAudio;
+	public bool soundBool = true;
 	void Start()
 {
-   
+   FootstapsAudio = RuntimeManager.CreateInstance(Footstap);
     target = transform.position;
 }
 	void Update()
@@ -26,7 +34,25 @@ private Vector3 target;
 
 
         }
+		if (transform.position == target){
+			ActualSpeed = 0;
+			
+
+		}
+		else if(transform.position != target){
+			ActualSpeed = speed;
+			if (ActualSpeed == speed && soundBool == true){
+				soundBool = false;
+				FootstapsAudio.start();
+			}
+			
+		}
+		if (ActualSpeed == 0){
+			soundBool = true;
+			FootstapsAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+		}
 	transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+
 	}
 	
 }

@@ -971,6 +971,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   pointerMarkerPrefab: {fileID: 6700216206920059996, guid: 080360fe712140c478ff953cd31cf22f, type: 3}
+  ActualSpeed: 0
+  Footstap:
+    Guid:
+      Data1: -2072949654
+      Data2: 1321602469
+      Data3: 1479953539
+      Data4: 427541721
+    Path: event:/Passos (mp3cut.net)
+  soundBool: 1
 --- !u!4 &76887159
 Transform:
   m_ObjectHideFlags: 0
@@ -1229,6 +1238,20 @@ MonoBehaviour:
   picareta: {fileID: 0}
   pedra: {fileID: 104279794}
   comOBJ: {fileID: 486502967}
+  Pick:
+    Guid:
+      Data1: 675839511
+      Data2: 1166999272
+      Data3: -1726264943
+      Data4: 662481892
+    Path: event:/PegarItem (mp3cut.net)
+  Rock:
+    Guid:
+      Data1: -915382099
+      Data2: 1097995888
+      Data3: -956696665
+      Data4: 1244489035
+    Path: event:/PedraQuebrando (mp3cut.net)
 --- !u!1 &118026899
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,6 +1322,7 @@ GameObject:
   - component: {fileID: 141120571}
   - component: {fileID: 141120570}
   - component: {fileID: 141120569}
+  - component: {fileID: 141120572}
   m_Layer: 0
   m_Name: "rostopedra_270\xB0"
   m_TagString: Untagged
@@ -1440,6 +1464,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &141120572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141120567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 749218297
+      Data2: 1108280632
+      Data3: -1805742674
+      Data4: 970464051
+    Path: event:/dragging Stone - sound effect (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &146326139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,6 +1839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 261342774}
   - component: {fileID: 261342773}
+  - component: {fileID: 261342775}
   m_Layer: 0
   m_Name: "cart\xE3o"
   m_TagString: Untagged
@@ -1860,6 +1916,37 @@ Transform:
   m_Father: {fileID: 2071242621}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &261342775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261342772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 675839511
+      Data2: 1166999272
+      Data3: -1726264943
+      Data4: 662481892
+    Path: event:/PegarItem (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &269049389
 GameObject:
   m_ObjectHideFlags: 0
@@ -2862,6 +2949,8 @@ GameObject:
   - component: {fileID: 393369208}
   - component: {fileID: 393369209}
   - component: {fileID: 393369210}
+  - component: {fileID: 393369212}
+  - component: {fileID: 393369211}
   m_Layer: 0
   m_Name: Sala2
   m_TagString: Untagged
@@ -2948,6 +3037,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951fd8530e414fe4e8dae2f7e4a4634b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &393369211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393369207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 908561932
+      Data2: 1179511073
+      Data3: -480571474
+      Data4: 58743365
+    Path: event:/Interruptor (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &393369212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393369207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 908561932
+      Data2: 1179511073
+      Data3: -480571474
+      Data4: 58743365
+    Path: event:/Interruptor (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &410814577
 GameObject:
   m_ObjectHideFlags: 0
@@ -3641,6 +3792,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3714,6 +3866,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &527942917
 GameObject:
   m_ObjectHideFlags: 0
@@ -4028,6 +4194,8 @@ GameObject:
   - component: {fileID: 570080941}
   - component: {fileID: 570080943}
   - component: {fileID: 570080942}
+  - component: {fileID: 570080945}
+  - component: {fileID: 570080944}
   m_Layer: 0
   m_Name: Buron2 (1)
   m_TagString: Untagged
@@ -4157,6 +4325,68 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.44, y: 2.04}
   m_EdgeRadius: 0
+--- !u!114 &570080944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570080938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 246197821
+      Data2: 1267565016
+      Data3: 539716500
+      Data4: -382256889
+    Path: "event:/Bot\xE3o (mp3cut.net)"
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &570080945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570080938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 246197821
+      Data2: 1267565016
+      Data3: 539716500
+      Data4: -382256889
+    Path: "event:/Bot\xE3o (mp3cut.net)"
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &587193150
 GameObject:
   m_ObjectHideFlags: 0
@@ -4956,6 +5186,8 @@ GameObject:
   - component: {fileID: 749125449}
   - component: {fileID: 749125450}
   - component: {fileID: 749125451}
+  - component: {fileID: 749125453}
+  - component: {fileID: 749125452}
   m_Layer: 0
   m_Name: Sala1
   m_TagString: Untagged
@@ -5042,6 +5274,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951fd8530e414fe4e8dae2f7e4a4634b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &749125452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749125448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 908561932
+      Data2: 1179511073
+      Data3: -480571474
+      Data4: 58743365
+    Path: event:/Interruptor (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &749125453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749125448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 908561932
+      Data2: 1179511073
+      Data3: -480571474
+      Data4: 58743365
+    Path: event:/Interruptor (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &762636953
 GameObject:
   m_ObjectHideFlags: 0
@@ -5221,6 +5515,7 @@ GameObject:
   - component: {fileID: 783455166}
   - component: {fileID: 783455168}
   - component: {fileID: 783455167}
+  - component: {fileID: 783455169}
   m_Layer: 0
   m_Name: InterruptorInteract
   m_TagString: Untagged
@@ -5298,6 +5593,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &783455169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783455165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d01f77e9d315d4c8cab1f5287b0720, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gen:
+    Guid:
+      Data1: 908561932
+      Data2: 1179511073
+      Data3: -480571474
+      Data4: 58743365
+    Path: event:/Interruptor (mp3cut.net)
+  InteractText: {fileID: 1793555986}
 --- !u!1 &804123311
 GameObject:
   m_ObjectHideFlags: 0
@@ -5679,6 +5994,8 @@ GameObject:
   - component: {fileID: 872123012}
   - component: {fileID: 872123015}
   - component: {fileID: 872123014}
+  - component: {fileID: 872123017}
+  - component: {fileID: 872123016}
   m_Layer: 0
   m_Name: Buron2 (2)
   m_TagString: Untagged
@@ -5808,6 +6125,68 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.44, y: 2.04}
   m_EdgeRadius: 0
+--- !u!114 &872123016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872123010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 246197821
+      Data2: 1267565016
+      Data3: 539716500
+      Data4: -382256889
+    Path: "event:/Bot\xE3o (mp3cut.net)"
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &872123017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872123010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 246197821
+      Data2: 1267565016
+      Data3: 539716500
+      Data4: -382256889
+    Path: "event:/Bot\xE3o (mp3cut.net)"
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &875303267
 GameObject:
   m_ObjectHideFlags: 0
@@ -6450,6 +6829,8 @@ GameObject:
   - component: {fileID: 1013901153}
   - component: {fileID: 1013901154}
   - component: {fileID: 1013901155}
+  - component: {fileID: 1013901157}
+  - component: {fileID: 1013901156}
   m_Layer: 0
   m_Name: Buron2
   m_TagString: Untagged
@@ -6591,6 +6972,68 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.44, y: 2.04}
   m_EdgeRadius: 0
+--- !u!114 &1013901156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013901150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 246197821
+      Data2: 1267565016
+      Data3: 539716500
+      Data4: -382256889
+    Path: "event:/Bot\xE3o (mp3cut.net)"
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1013901157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013901150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 246197821
+      Data2: 1267565016
+      Data3: 539716500
+      Data4: -382256889
+    Path: "event:/Bot\xE3o (mp3cut.net)"
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1026661049
 GameObject:
   m_ObjectHideFlags: 0
@@ -6919,6 +7362,20 @@ MonoBehaviour:
   picareta: {fileID: 1056396113}
   pedra: {fileID: 104279794}
   comOBJ: {fileID: 486502967}
+  Pick:
+    Guid:
+      Data1: 675839511
+      Data2: 1166999272
+      Data3: -1726264943
+      Data4: 662481892
+    Path: event:/PegarItem (mp3cut.net)
+  Rock:
+    Guid:
+      Data1: -915382099
+      Data2: 1097995888
+      Data3: -956696665
+      Data4: 1244489035
+    Path: event:/PedraQuebrando (mp3cut.net)
 --- !u!1 &1060748644
 GameObject:
   m_ObjectHideFlags: 0
@@ -7430,6 +7887,7 @@ GameObject:
   - component: {fileID: 1165642219}
   - component: {fileID: 1165642221}
   - component: {fileID: 1165642220}
+  - component: {fileID: 1165642222}
   m_Layer: 0
   m_Name: "rostopedra_0\xB0"
   m_TagString: Untagged
@@ -7571,6 +8029,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.974623, y: 2.9906642}
   m_EdgeRadius: 0
+--- !u!114 &1165642222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165642217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 749218297
+      Data2: 1108280632
+      Data3: -1805742674
+      Data4: 970464051
+    Path: event:/dragging Stone - sound effect (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1201136237
 GameObject:
   m_ObjectHideFlags: 0
@@ -7960,6 +8449,8 @@ GameObject:
   - component: {fileID: 1259876354}
   - component: {fileID: 1259876355}
   - component: {fileID: 1259876356}
+  - component: {fileID: 1259876358}
+  - component: {fileID: 1259876357}
   m_Layer: 0
   m_Name: Sala4
   m_TagString: Untagged
@@ -8046,6 +8537,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951fd8530e414fe4e8dae2f7e4a4634b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1259876357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259876353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 908561932
+      Data2: 1179511073
+      Data3: -480571474
+      Data4: 58743365
+    Path: event:/Interruptor (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1259876358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259876353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 908561932
+      Data2: 1179511073
+      Data3: -480571474
+      Data4: 58743365
+    Path: event:/Interruptor (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1307051127
 GameObject:
   m_ObjectHideFlags: 0
@@ -10305,6 +10858,8 @@ GameObject:
   - component: {fileID: 1797302447}
   - component: {fileID: 1797302448}
   - component: {fileID: 1797302449}
+  - component: {fileID: 1797302451}
+  - component: {fileID: 1797302450}
   m_Layer: 0
   m_Name: Sala6
   m_TagString: Untagged
@@ -10391,6 +10946,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951fd8530e414fe4e8dae2f7e4a4634b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1797302450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797302446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 908561932
+      Data2: 1179511073
+      Data3: -480571474
+      Data4: 58743365
+    Path: event:/Interruptor (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1797302451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797302446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 908561932
+      Data2: 1179511073
+      Data3: -480571474
+      Data4: 58743365
+    Path: event:/Interruptor (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1814548649
 GameObject:
   m_ObjectHideFlags: 0
@@ -10538,6 +11155,7 @@ GameObject:
   - component: {fileID: 1835597491}
   - component: {fileID: 1835597490}
   - component: {fileID: 1835597489}
+  - component: {fileID: 1835597493}
   m_Layer: 0
   m_Name: "rostopedra_180\xB0"
   m_TagString: Untagged
@@ -10679,6 +11297,37 @@ Transform:
   m_Father: {fileID: 504940534}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1835597493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835597488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 749218297
+      Data2: 1108280632
+      Data3: -1805742674
+      Data4: 970464051
+    Path: event:/dragging Stone - sound effect (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1851308500
 GameObject:
   m_ObjectHideFlags: 0
@@ -11040,6 +11689,7 @@ GameObject:
   - component: {fileID: 1906370846}
   - component: {fileID: 1906370845}
   - component: {fileID: 1906370844}
+  - component: {fileID: 1906370848}
   m_Layer: 0
   m_Name: "rostopedra_90\xB0"
   m_TagString: Untagged
@@ -11181,6 +11831,37 @@ Transform:
   m_Father: {fileID: 504940534}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1906370848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906370843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 749218297
+      Data2: 1108280632
+      Data3: -1805742674
+      Data4: 970464051
+    Path: event:/dragging Stone - sound effect (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1914707762
 GameObject:
   m_ObjectHideFlags: 0
@@ -11637,6 +12318,8 @@ GameObject:
   - component: {fileID: 1988734166}
   - component: {fileID: 1988734167}
   - component: {fileID: 1988734168}
+  - component: {fileID: 1988734170}
+  - component: {fileID: 1988734169}
   m_Layer: 0
   m_Name: Sala5
   m_TagString: Untagged
@@ -11723,6 +12406,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951fd8530e414fe4e8dae2f7e4a4634b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1988734169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988734165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 908561932
+      Data2: 1179511073
+      Data3: -480571474
+      Data4: 58743365
+    Path: event:/Interruptor (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1988734170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988734165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 908561932
+      Data2: 1179511073
+      Data3: -480571474
+      Data4: 58743365
+    Path: event:/Interruptor (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &2046424126
 GameObject:
   m_ObjectHideFlags: 0
@@ -11734,6 +12479,8 @@ GameObject:
   - component: {fileID: 2046424127}
   - component: {fileID: 2046424128}
   - component: {fileID: 2046424129}
+  - component: {fileID: 2046424131}
+  - component: {fileID: 2046424130}
   m_Layer: 0
   m_Name: Sala3
   m_TagString: Untagged
@@ -11820,6 +12567,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951fd8530e414fe4e8dae2f7e4a4634b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2046424130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046424126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 908561932
+      Data2: 1179511073
+      Data3: -480571474
+      Data4: 58743365
+    Path: event:/Interruptor (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &2046424131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046424126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 908561932
+      Data2: 1179511073
+      Data3: -480571474
+      Data4: 58743365
+    Path: event:/Interruptor (mp3cut.net)
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &2051421979
 GameObject:
   m_ObjectHideFlags: 0
