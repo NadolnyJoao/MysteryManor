@@ -15,6 +15,11 @@ public float ActualSpeed = 0;
 [SerializeField] private EventReference Footstap;
     private FMOD.Studio.EventInstance FootstapsAudio;
 	public bool soundBool = true;
+	public Animator animator;
+	public float NPosition = 0;
+	public bool Virar = false;
+
+
 	void Start()
 {
    FootstapsAudio = RuntimeManager.CreateInstance(Footstap);
@@ -31,11 +36,14 @@ public float ActualSpeed = 0;
 			GameObject pointerMarker = Instantiate(pointerMarkerPrefab, target, Quaternion.identity);
 			//destruir o ponterMarker apos terminar a animação 
 			Destroy(pointerMarker,0.5f);
+			animator.SetFloat ("PlayerSpeed", 1);
+
 
 
         }
 		if (transform.position == target){
 			ActualSpeed = 0;
+			animator.SetFloat ("PlayerSpeed", 0);
 			
 
 		}
@@ -44,6 +52,14 @@ public float ActualSpeed = 0;
 			if (ActualSpeed == speed && soundBool == true){
 				soundBool = false;
 				FootstapsAudio.start();
+			}
+			if(transform.position.x < target.x){
+				Virar = true;
+				this.transform.rotation = Quaternion.Euler(new Vector3(16f, Virar ? 180f : 0f, 16f));
+
+			}
+			else if (transform.position.x > target.x){
+				this.transform.rotation = Quaternion.Euler(new Vector3(16f, Virar ? 90f : 0f, 16f));
 			}
 			
 		}
