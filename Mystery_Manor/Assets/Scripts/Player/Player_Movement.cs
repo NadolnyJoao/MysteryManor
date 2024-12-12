@@ -55,11 +55,11 @@ public float ActualSpeed = 0;
 			}
 			if(transform.position.x < target.x){
 				Virar = true;
-				this.transform.rotation = Quaternion.Euler(new Vector3(16f, Virar ? 180f : 0f, 16f));
+				this.transform.rotation = Quaternion.Euler(new Vector3(16f, Virar ? 180f : 0f, 0f));
 
 			}
 			else if (transform.position.x > target.x){
-				this.transform.rotation = Quaternion.Euler(new Vector3(16f, Virar ? 90f : 0f, 16f));
+				this.transform.rotation = Quaternion.Euler(new Vector3(16f, Virar ? 0f : 0f, 0f));
 			}
 			
 		}
